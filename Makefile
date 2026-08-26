@@ -1,0 +1,11 @@
+setup:
+	pip install -r requirements.txt
+
+pipeline:
+	python load_data.py
+	python part2.py
+	python part3.py
+	python part4.py
+
+dashboard:
+	streamlit run dashboard.py
