@@ -29,6 +29,4 @@ My code structure is divided by parts, which is done both to keep things organiz
 For calculations, Most statistical calculations are done manually to ensure accuracy and readability. Most counts and filtering are done using SQL, and t-tests are calculated manually up until checking the p-value for the t-stat. I did this so that anyone reading the files can understand how those values were found, and to minimize the number of packages the user would need to install.   
 
 ## LINKS
-  Local URL: http://localhost:8501
-  Network URL: http://10.0.10.161:8501
-  External URL: http://4.155.45.98:8501
+https://andrewsousateikotechical.streamlit.app/
