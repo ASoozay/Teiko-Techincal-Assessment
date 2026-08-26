@@ -8,4 +8,4 @@ pipeline:
 	python part4.py
 
 dashboard:
-	streamlit run dashboard.py
+	python -m streamlit run dashboard.py
