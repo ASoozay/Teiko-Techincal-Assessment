@@ -17,7 +17,7 @@ PK = Primary Key, FK = Foreign Key
 I broke subjects into its own table so that if a subject's info changes or is involved in multiple samples, their information can stay consistent across samples.
 
 I also broke samples into its own table with just information about that sample. I did this so that we can analyze just the results of the sample without having to also keep track of subject information and cell counts at the same time.
-If we need that additional information, we can just do a simple join for either the subject information or the cell count information.
+If we need that additional information, we can just do a simple join for either the subject information or the cell count information. This scales easil;y if we have thousands or tens of thousands of samples, and allows for easier analysis of response without excess columns. 
 
 Splitting projects and cell counts likely deserve the most explanation. I broke off projects into its own table for two main reasons. One, so that we can track the number of projects we've done and easily find one. This scales well if we reach hundreds of projects and ensures that every project remains even if all the samples' rows involving it get deleted. 
 Secondly, splitting projects allows us to keep counts of project samples even when no samples have been made yet. We saw this come into action in Part 4, where project2 had 0 samples in our subset. Without a separate table, this would have been lost and left up to assumption. 
